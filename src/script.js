@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     res.send("Welcome to the video");
 })
 
-// mongoose conexion
+// Mongoose conexion
 mongoose
 .connect(process.env.MONGODB_URI)
 .then(() => console.log("Conexion a MongoDB Atlas"))
